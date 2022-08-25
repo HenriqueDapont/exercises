@@ -1,33 +1,30 @@
+import util.FileUtil;
+
 import java.io.*;
 import java.nio.Buffer;
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class TestaIo2 {
 
-    public static void main(String[] args) throws IOException {
-//        InputStream input = new FileInputStream("File_A.rodrigo");
-//        Reader reader = new InputStreamReader(input);
-//        BufferedReader bufferRead = new BufferedReader(reader);
-//
-//        String linha = bufferRead.readLine();
-//
-//        while(linha != null){
-//            System.out.println(linha);
-//            linha = bufferRead.readLine();
+    public static void main(String[] args) {
 
-        FileFilter filter = file -> file.getName().endsWith(".rodrigo");
-
-        File dir = new File("D:/Documentos/NTConsult/Exercicios");
-        File[] files = dir.listFiles(filter);
-        System.out.println(files.length);
-
-        OutputStream output = new FileOutputStream("Agrupamento.txt");
-        Writer writer = new OutputStreamWriter(output);
-        BufferedWriter bufferWrite = new BufferedWriter(writer);
+        FileUtil fileUtil = new FileUtil();
+        List<String> requestList1 = fileUtil.readFile("File_A.rodrigo");
+        List<String> requestList2 = fileUtil.readFile("File_B.rodrigo");
+        List<String> requestList3 = fileUtil.readFile("File_C.rodrigo");
 
 
+        List<List<String>> listFiles = Arrays.asList(requestList1,requestList2,requestList3);
+        System.out.println(listFiles);
 
-        bufferWrite.close();
+
+        }
+
+//        File dir = new File("D:/Documentos/NTConsult/ExerciciosTeste");
+//        List<File> files = Arrays.asList(dir);
+
 
     }
-}
