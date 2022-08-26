@@ -20,7 +20,6 @@ public class TestaListas5 {
     }
 
     public static List<Character> createCipher(List<Character> alfabeto, int number) {
-
         List<Character> alfabetoCifrado = new ArrayList<Character>();
 
         for (int i = number; i < alfabeto.toArray().length; i++) {

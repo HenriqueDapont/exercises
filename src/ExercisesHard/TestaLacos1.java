@@ -5,7 +5,6 @@ import java.util.List;
 
 public class TestaLacos1 {
     public static void main(String[] args) {
-
         multipleOfFive(0);
     }
 

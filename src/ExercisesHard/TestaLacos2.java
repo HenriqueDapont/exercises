@@ -3,7 +3,6 @@ package ExercisesHard;
 public class TestaLacos2 {
 
     public static void main(String[] args) {
-
         sumFunction(0);
     }
 
@@ -12,7 +11,7 @@ public class TestaLacos2 {
             double function = ((Math.sqrt(i / 3)) * 4000 + (i / 2)) / 2;
             sum += function;
         }
-        //System.out.printf("Soma: %.1f\n", sum);
+        System.out.printf("Soma: %.1f\n", sum);
         return sum;
     }
 }

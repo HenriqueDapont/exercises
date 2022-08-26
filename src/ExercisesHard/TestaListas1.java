@@ -5,7 +5,6 @@ import java.util.*;
 public class TestaListas1 {
 
     public static void main(String[] args) {
-
         List<String> phrases = Arrays.asList("A base do teto desaba","A batata e o tabaco",
                 "Acuda cadela da Leda caduca","Vida vivida","Anotaram a data da maratona",
                 "A torre da derrota","A casa esta casada","O galo ama o lago","Oito Morros Altos");

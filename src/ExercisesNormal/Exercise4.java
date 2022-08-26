@@ -25,7 +25,6 @@ public class Exercise4 {
     }
 
     public static String calculateChange(double money) {
-
         List<Integer> notes = Arrays.asList(50, 20, 10, 5, 2);
         List<Double> coins = Arrays.asList(1.0, 0.5, 0.25, 0.10, 0.5, 0.1);
         double toyPrice = 8.5;

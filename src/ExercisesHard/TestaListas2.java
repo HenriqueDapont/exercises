@@ -10,6 +10,7 @@ public class TestaListas2 {
                 "Amanda","Joice","Mario","Carlos","Jenifer");
 
         startsVowel(names);
+        System.out.println(" ");
         startsConsonant(names);
     }
     public static List<String> startsVowel (List<String> content) {
@@ -45,8 +46,5 @@ public class TestaListas2 {
         System.out.println("Nomes que iniciam com consoante:");
         startsWithConsonant.forEach(System.out::println);
         return startsWithConsonant;
-
-
-
     }
 }
