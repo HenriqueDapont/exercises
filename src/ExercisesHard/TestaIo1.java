@@ -1,4 +1,6 @@
-import util.FileUtil;
+package ExercisesHard;
+
+import ExercisesHard.util.FileUtil;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -1,3 +1,5 @@
+package ExercisesHard;
+
 public class TestaLacos2 {
 
     public static void main(String[] args) {

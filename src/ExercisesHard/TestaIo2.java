@@ -1,9 +1,7 @@
-import util.FileUtil;
+package ExercisesHard;
 
-import java.io.*;
-import java.nio.Buffer;
-import java.sql.Array;
-import java.util.ArrayList;
+import ExercisesHard.util.FileUtil;
+
 import java.util.Arrays;
 import java.util.List;
 

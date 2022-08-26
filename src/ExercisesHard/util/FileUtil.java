@@ -1,4 +1,4 @@
-package util;
+package ExercisesHard.util;
 
 import java.io.*;
 import java.util.ArrayList;
