@@ -2,6 +2,7 @@ package ExercisesNormal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Exercise6 {
@@ -10,7 +11,6 @@ public class Exercise6 {
         List<Integer> numberList = Arrays.asList(23, 56, 77, 12, 2, 7, 4, 99, 45);
 
         removeOddNumbers(numberList);
-        System.out.println(removeOddNumbers(numberList));
     }
 
     public static List<Integer> removeOddNumbers(List<Integer> numberList) {
@@ -20,6 +20,7 @@ public class Exercise6 {
                 pairNumbers.add(numberList.get(i));
             }
         }
-        return pairNumbers;
+        System.out.println(pairNumbers);
+        return numberList;
     }
 }
