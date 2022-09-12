@@ -15,20 +15,13 @@ public class Exercise2 {
         System.out.println(calculateRange(number1, number2));
     }
 
-    public static List<Integer> calculateRange(int initialNumber, int finalNumber) {
-        List<Integer> intervalo = new ArrayList<Integer>();
-
-        if(initialNumber <= finalNumber) {
-            while(initialNumber <= finalNumber){
-                intervalo.add(initialNumber);
-                initialNumber++;
-            }
+    public static int calculateRange(int initialNumber, int finalNumber) {
+        int finalResult;
+        if (initialNumber <= finalNumber) {
+            finalResult = finalNumber - initialNumber;
         } else {
-            while(finalNumber <= initialNumber){
-                intervalo.add(finalNumber);
-                finalNumber++;
-            }
+            finalResult = initialNumber - finalNumber;
         }
-        return intervalo;
+        return finalResult;
     }
 }
