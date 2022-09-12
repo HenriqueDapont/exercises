@@ -14,13 +14,13 @@ public class Exercise6 {
     }
 
     public static List<Integer> removeOddNumbers(List<Integer> numberList) {
-        List<Integer> pairNumbers = new ArrayList<Integer>();
+        List<Integer> pairNumbers = new ArrayList<>();
         for (int i = 0; i < numberList.size(); i++) {
             if(numberList.get(i) % 2 == 0) {
                 pairNumbers.add(numberList.get(i));
             }
         }
         System.out.println(pairNumbers);
-        return numberList;
+        return pairNumbers;
     }
 }
