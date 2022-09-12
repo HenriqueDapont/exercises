@@ -14,12 +14,11 @@ public class TestaIo2 {
 
     public static void main(String[] args) throws IOException {
         Path path = Paths.get("D:/Documentos/NTConsult/ExerciciosTeste");
-        List<Path> paths = findByFileExtension(path, ".rodrigo");
-        paths.forEach(x -> System.out.println(x));
+        List<Path> directories = findByFileExtension(path, ".rodrigo");
+        directories.forEach(x -> System.out.println(x));
 
         Path finalPath = Paths.get("Agrupamento.txt");
-        writeList(paths, finalPath);
-        System.out.println(writeList(paths, finalPath));
+        writeList(directories, finalPath);
     }
     public static List<Path> findByFileExtension(Path path, String fileExtension) throws IOException {
         if (!Files.isDirectory(path)) {
@@ -34,11 +33,10 @@ public class TestaIo2 {
         }
         return result;
     }
-    public static List<String> writeList(List<Path> paths, Path finalPath) throws IOException {
+    public static List<String> writeList(List<Path> directories, Path finalPath) throws IOException {
         List<String> requestList = new ArrayList<>();
-        for(int i = 0; i < paths.size(); i++) {
-            Files.readString(paths.get(i));
-            requestList.add(Files.readString(paths.get(i)));
+        for(int i = 0; i < directories.size(); i++) {
+            requestList.add(Files.readString(directories.get(i)));
         }
         Files.write(finalPath, requestList.stream().toList());
         return requestList;
