@@ -1,7 +1,5 @@
 package ExercisesNormal;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -42,7 +40,7 @@ public class Exercise4 {
             result = "Troco = R$ " + String.format("%.2f",change) + "\n";
             value = (int) change;
 
-            for (int i = 0; value != 0 && value != 1; i++) {
+            for (int i = 0; value >= 2; i++) {
                 qtNotes = value / notes.get(i);
                 if (qtNotes != 0) {
                     result = result + (qtNotes + " nota(s) de R$" + notes.get(i) + ",00.\n");
@@ -50,13 +48,13 @@ public class Exercise4 {
                 }
             }
             result = result + "\n";
+
             if(value == 1){
                 result = result + ("1 moeda de R$" + coins.get(0) + "\n");
             }
             changeRemain = (int)Math.round((change - (int) change) * 100);
-            System.out.println(changeRemain);
 
-            for (int i = 1; changeRemain != 0 && changeRemain >= 5; i++) {
+            for (int i = 1; changeRemain >= 5; i++) {
                 qtCoins = changeRemain / coins.get(i);
                 if (qtCoins != 0) {
                     result = result + (qtCoins + " moeda(s) de " + coins.get(i) + " centavos.\n");
